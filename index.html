@@ -61,7 +61,7 @@ legend.scheduler-border {
          src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type = "text/javascript">
 
-    
+
 
 	function onConnectionLost(){
 	console.log("connection lost");
@@ -128,6 +128,7 @@ legend.scheduler-border {
 	mqtt = new Paho.MQTT.Client(host,port, "/ws",cname);
 	//document.write("connecting to "+ host);
 	var options = {
+        useSSL:true,
         timeout: 3,
 		onSuccess: onConnect,
 		onFailure: onFailure,
