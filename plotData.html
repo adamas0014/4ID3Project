@@ -1,0 +1,50 @@
+
+<script>    
+    async function getData(){
+        const response = await fetch('collectedData.csv');
+        const data = await response.text();
+        data = data.trim();
+    
+        const rows = data.split('\n');
+        let ret = [];
+        for(let i = 0; i < rows.length; i ++ ){
+            for(let j = 0; j < 5; j++){
+                ret[i][j] = element.split(',');
+            }
+        };
+        return ret;
+    }
+    
+   
+
+</script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+</head>
+<body>
+    <div id = "plt">
+
+    </div>
+    <script>
+        let dataArr = getData();
+        var element = document.getElementById("plt");
+        for(let i = 0; i < dataArr.length; i ++){
+            for(let j = 0; j < dataArr[i].length; j ++){
+                var text = document.createTextNode(dataArr[i][j] + ", "); 
+                element.appendChild(text);
+            }
+            var text = document.createTextNode("\n");
+            element.appendChild(text);
+        }
+    </script>
+</body>
+</html>
+
+
