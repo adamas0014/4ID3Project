@@ -282,22 +282,46 @@ input:checked + .slider:before {
 </head>
 <body>
 
+<style>
+.navbar-fixed {
+  left: 30%; /* just an estimate of your sidebar's width */
+  
+}
+</style>
 
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"style="width: 33%;">Dashboard</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon "></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto" >
+    <li class="nav-item">
+        <a class="nav-link" href="docs.html">Docs</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="https://github.com/adamas0014/4ID3Project"><i class="fab fa-github"></i> Github</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="mailto:rajam4@mcmaster.ca"><i class="far fa-paper-plane"></i>&nbsp;Muizz</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="mailto:rajam4@mcmaster.ca"><i class="far fa-paper-plane"></i>&nbsp;Walid</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="mailto:rajam4@mcmaster.ca"><i class="far fa-paper-plane"></i>&nbsp;Adam</a>
+      </li>
+    </ul>
 
-            
-    <div class = "centreTitle"> <h1>Remote Monitoring</h1></div>    <hr>
+  </div>
+</nav>
 
-    <div class="navbar clear nav-top">
-        <div class="row content">
-            <!--<a href="#"><img class="logo" src="logo.jpg"></a>     -->
-            <h1>Remote Monitoring</h1>     
-            <a class="right" href="mailto:rajam4@mcmaster.ca" target="_blank"><i class="fas fa-paper-plane"></i>&nbsp; Muizz </a>
-            <a class="right" href="mailto:alsharew@mcmaster.ca" target="_blank"><i class="fas fa-paper-plane"></i>&nbsp; Walid </a>
-            <a class="right" href="mailto:sokacza@mcmaster.ca" target="_blank"><i class="fas fa-paper-plane"></i>&nbsp; Adam</a>
-        </div>
-    </div>
     <br/><br/><br/><br/>
-
 
 
 
